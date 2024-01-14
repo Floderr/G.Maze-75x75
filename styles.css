@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #1a1a1a;
+  overflow: hidden;
+}
+#maze {
+  display: grid;
+  grid-template-columns: repeat(75, 10px);
+  grid-template-rows: repeat(75, 10px);
+  gap: 1px;
+}
+.cell {
+  width: 10px;
+  height: 10px;
+  border: 0px solid #000;
+  box-sizing: border-box;
+}
+.path {
+  background-color: #FFF;
+}
+.wall {
+  background-color: #1a1a1a;
+}
+.player {
+  background-color: rgb(255, 0, 0);
+}
+.exit {
+  background-color: rgb(0, 68, 255);
+}
